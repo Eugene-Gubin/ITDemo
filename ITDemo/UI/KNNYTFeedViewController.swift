@@ -19,6 +19,15 @@ class KNNYTFeedViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        if !KNNetworkUtils.isConnectedToNetwork() {
+            UIAlertView(title: nil, message: "network.mustConnect".localized, delegate: nil, cancelButtonTitle: "common.ok".localized).show()
+            return
+        }
+        
+        asyncLoadRSSFeed()
+    }
+    
+    func asyncLoadRSSFeed() {
         KNNYTParser.asyncParseFromURL(KNDefinitions.kNYTFeed) { result in
             self.feedEntries = result ?? []
             self.tableView.reloadData()

@@ -16,3 +16,5 @@
 "userProfile.status.phoneIsInvalid" = "Телефонный номер указан неправильно";
 
 "feed.error" = "Не удалось загрузить ленту новостей";
+
+"network.mustConnect" = "Необходимо подключение к сети";

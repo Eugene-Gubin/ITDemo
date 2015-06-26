@@ -16,3 +16,5 @@
 "userProfile.status.phoneIsInvalid" = "Phone number is not valid";
 
 "feed.error" = "Couldn't load content";
+
+"network.mustConnect" = "Network connection is needed";
