@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "AcL-6W-VW2"; */
+"AcL-6W-VW2.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "JR3-sI-raC"; */
+"JR3-sI-raC.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "cVY-wd-7uZ"; */
+"cVY-wd-7uZ.placeholder" = "User Name";
+
+/* Class = "UINavigationItem"; title = "Registration"; ObjectID = "oOL-Sr-n98"; */
+"oOL-Sr-n98.title" = "Registration";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "zFZ-Lc-Lmy"; */
+"zFZ-Lc-Lmy.placeholder" = "Password";

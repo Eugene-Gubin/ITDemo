@@ -1,0 +1,27 @@
+//
+//  KNRegistrationViewController.swift
+//  ITDemo
+//
+//  Created by Eugene Gubin on 6/26/15.
+//  Copyright (c) 2015 Evgeniy Gubin. All rights reserved.
+//
+
+import UIKit
+
+class KNRegistrationViewController: UIViewController {
+
+    @IBOutlet weak var lblUserName: UITextField!
+    @IBOutlet weak var lblEmail: UITextField!
+    @IBOutlet weak var lblPassword: UITextField!
+
+    @IBAction func handleRegisterTapped(sender: AnyObject) {
+        let um = KNUserManager.sharedInstance
+        let status = um.saveUserProfile(name: lblUserName.text, email: lblEmail.text, password: lblPassword.text)
+        if (status == .OK) {
+            // todo: trigger segue to next screen
+            UIAlertView(title: nil, message: "All is ok!", delegate: nil, cancelButtonTitle: "OK").show()
+        } else {
+            UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "OK").show()
+        }
+    }
+}

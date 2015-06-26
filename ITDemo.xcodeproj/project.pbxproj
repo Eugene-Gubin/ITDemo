@@ -13,6 +13,15 @@
 		B64003C81B3D1E3400EC6E7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64003C71B3D1E3400EC6E7F /* Images.xcassets */; };
 		B64003CB1B3D1E3400EC6E7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64003C91B3D1E3400EC6E7F /* LaunchScreen.xib */; };
 		B64003D71B3D1E3400EC6E7F /* ITDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003D61B3D1E3400EC6E7F /* ITDemoTests.swift */; };
+		B64003E41B3D204100EC6E7F /* KNUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003E31B3D204100EC6E7F /* KNUserProfile.swift */; };
+		B64003E61B3D20A100EC6E7F /* KNUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003E51B3D20A100EC6E7F /* KNUserManager.swift */; };
+		B64003E81B3D216E00EC6E7F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64003E71B3D216E00EC6E7F /* Security.framework */; };
+		B64003EB1B3D21C700EC6E7F /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003EA1B3D21C700EC6E7F /* Keychain.swift */; };
+		B64003ED1B3D261B00EC6E7F /* KNDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003EC1B3D261B00EC6E7F /* KNDefinitions.swift */; };
+		B64003EF1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003EE1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift */; };
+		B64003F11B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003F01B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift */; };
+		B64003F31B3D2F1800EC6E7F /* KNEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003F21B3D2F1800EC6E7F /* KNEmailValidator.swift */; };
+		B64003F51B3D31E900EC6E7F /* KNUserProfileStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003F41B3D31E900EC6E7F /* KNUserProfileStatusExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,16 @@
 		B64003D01B3D1E3400EC6E7F /* ITDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64003D51B3D1E3400EC6E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64003D61B3D1E3400EC6E7F /* ITDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITDemoTests.swift; sourceTree = "<group>"; };
+		B64003E31B3D204100EC6E7F /* KNUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNUserProfile.swift; path = Models/KNUserProfile.swift; sourceTree = "<group>"; };
+		B64003E51B3D20A100EC6E7F /* KNUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNUserManager.swift; path = Logic/KNUserManager.swift; sourceTree = "<group>"; };
+		B64003E71B3D216E00EC6E7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B64003EA1B3D21C700EC6E7F /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Logic/Utils/Keychain.swift; sourceTree = "<group>"; };
+		B64003EC1B3D261B00EC6E7F /* KNDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNDefinitions.swift; path = Logic/Utils/KNDefinitions.swift; sourceTree = "<group>"; };
+		B64003EE1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNRegistrationViewController.swift; path = UI/KNRegistrationViewController.swift; sourceTree = "<group>"; };
+		B64003F01B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNUserProfileValidationStatus.swift; sourceTree = "<group>"; };
+		B64003F21B3D2F1800EC6E7F /* KNEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNEmailValidator.swift; path = Logic/Utils/KNEmailValidator.swift; sourceTree = "<group>"; };
+		B64003F41B3D31E900EC6E7F /* KNUserProfileStatusExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNUserProfileStatusExtensions.swift; path = Logic/Utils/KNUserProfileStatusExtensions.swift; sourceTree = "<group>"; };
+		B64003F61B3D389300EC6E7F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64003E81B3D216E00EC6E7F /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,7 @@
 		B64003B21B3D1E3400EC6E7F = {
 			isa = PBXGroup;
 			children = (
+				B64003E71B3D216E00EC6E7F /* Security.framework */,
 				B64003BD1B3D1E3400EC6E7F /* ITDemo */,
 				B64003D31B3D1E3400EC6E7F /* ITDemoTests */,
 				B64003BC1B3D1E3400EC6E7F /* Products */,
@@ -77,6 +98,9 @@
 		B64003BD1B3D1E3400EC6E7F /* ITDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B64003E21B3D1FE400EC6E7F /* Models */,
+				B64003E11B3D1FDF00EC6E7F /* Logic */,
+				B64003E01B3D1FD600EC6E7F /* UI */,
 				B64003C01B3D1E3400EC6E7F /* AppDelegate.swift */,
 				B64003C21B3D1E3400EC6E7F /* ViewController.swift */,
 				B64003C41B3D1E3400EC6E7F /* Main.storyboard */,
@@ -110,6 +134,43 @@
 				B64003D51B3D1E3400EC6E7F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B64003E01B3D1FD600EC6E7F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B64003EE1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B64003E11B3D1FDF00EC6E7F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B64003E91B3D21A400EC6E7F /* Utils */,
+				B64003E51B3D20A100EC6E7F /* KNUserManager.swift */,
+				B64003F01B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		B64003E21B3D1FE400EC6E7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B64003E31B3D204100EC6E7F /* KNUserProfile.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B64003E91B3D21A400EC6E7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B64003EA1B3D21C700EC6E7F /* Keychain.swift */,
+				B64003EC1B3D261B00EC6E7F /* KNDefinitions.swift */,
+				B64003F21B3D2F1800EC6E7F /* KNEmailValidator.swift */,
+				B64003F41B3D31E900EC6E7F /* KNUserProfileStatusExtensions.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +274,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64003C31B3D1E3400EC6E7F /* ViewController.swift in Sources */,
+				B64003F51B3D31E900EC6E7F /* KNUserProfileStatusExtensions.swift in Sources */,
+				B64003E61B3D20A100EC6E7F /* KNUserManager.swift in Sources */,
+				B64003F31B3D2F1800EC6E7F /* KNEmailValidator.swift in Sources */,
+				B64003EF1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift in Sources */,
 				B64003C11B3D1E3400EC6E7F /* AppDelegate.swift in Sources */,
+				B64003ED1B3D261B00EC6E7F /* KNDefinitions.swift in Sources */,
+				B64003E41B3D204100EC6E7F /* KNUserProfile.swift in Sources */,
+				B64003F11B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift in Sources */,
+				B64003EB1B3D21C700EC6E7F /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +309,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B64003C51B3D1E3400EC6E7F /* Base */,
+				B64003F61B3D389300EC6E7F /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
