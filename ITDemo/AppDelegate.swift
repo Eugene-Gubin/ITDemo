@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let up = KNUserManager.sharedInstance.loadUserProfile() {
+            let home = UIStoryboard(name: KNDefinitions.kStoryboardHome, bundle: nil)
+            let rootVC = home.instantiateInitialViewController() as! UIViewController
+            window?.rootViewController = rootVC
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

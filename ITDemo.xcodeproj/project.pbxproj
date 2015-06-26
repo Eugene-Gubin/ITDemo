@@ -11,6 +11,7 @@
 		B627B5211B3D4A9600BC0123 /* KNPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */; };
 		B627B5231B3D4CA700BC0123 /* KNPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B5221B3D4CA700BC0123 /* KNPhoneUtils.swift */; };
 		B627B5251B3D4E6400BC0123 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627B5241B3D4E6400BC0123 /* CoreTelephony.framework */; };
+		B627B5271B3D614600BC0123 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B627B5261B3D614600BC0123 /* Home.storyboard */; };
 		B64003C11B3D1E3400EC6E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003C01B3D1E3400EC6E7F /* AppDelegate.swift */; };
 		B64003C31B3D1E3400EC6E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003C21B3D1E3400EC6E7F /* ViewController.swift */; };
 		B64003C61B3D1E3400EC6E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64003C41B3D1E3400EC6E7F /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNPhoneViewController.swift; path = UI/KNPhoneViewController.swift; sourceTree = "<group>"; };
 		B627B5221B3D4CA700BC0123 /* KNPhoneUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNPhoneUtils.swift; path = Logic/KNPhoneUtils.swift; sourceTree = "<group>"; };
 		B627B5241B3D4E6400BC0123 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B627B5261B3D614600BC0123 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = UI/Home.storyboard; sourceTree = "<group>"; };
 		B64003BB1B3D1E3400EC6E7F /* ITDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64003BF1B3D1E3400EC6E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64003C01B3D1E3400EC6E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				B64003EE1B3D2A7F00EC6E7F /* KNRegistrationViewController.swift */,
 				B64003F91B3D3FCE00EC6E7F /* StringExtensions.swift */,
 				B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */,
+				B627B5261B3D614600BC0123 /* Home.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64003C61B3D1E3400EC6E7F /* Main.storyboard in Resources */,
+				B627B5271B3D614600BC0123 /* Home.storyboard in Resources */,
 				B627B51C1B3D464700BC0123 /* Localizable.strings in Resources */,
 				B64003CB1B3D1E3400EC6E7F /* LaunchScreen.xib in Resources */,
 				B64003C81B3D1E3400EC6E7F /* Images.xcassets in Resources */,

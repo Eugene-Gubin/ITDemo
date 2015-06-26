@@ -34,7 +34,9 @@ class KNPhoneViewController: UIViewController {
         let status = KNUserManager.sharedInstance.saveUserPhoneNumber(tfPhone.text)
         
         if status == .OK {
-            // todo segue
+            let homeSB = UIStoryboard(name: KNDefinitions.kStoryboardHome, bundle: nil)
+            let vc = homeSB.instantiateInitialViewController() as! UIViewController
+            presentViewController(vc, animated: true, completion: nil)
         } else {
             UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "common.ok".localized).show()
         }
