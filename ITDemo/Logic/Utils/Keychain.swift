@@ -18,6 +18,7 @@ class Keychain {
     private let kMatchLimit = kSecMatchLimit as String
     
     private let kGenericPwd = kSecClassGenericPassword as String
+    private let kOnlyFirst = kSecMatchLimitOne as String
     
     func update(key: String, data: NSData) -> Bool {
         let query = [
@@ -36,8 +37,8 @@ class Keychain {
         let query = [
             kSecurityClass : kGenericPwd,
             kAccount : key,
-            kGenericPwd : kCFBooleanTrue,
-            kMatchLimit : kSecMatchLimitOne]
+            kReturnData : kCFBooleanTrue,
+            kMatchLimit : kOnlyFirst]
         
         var result: Unmanaged<AnyObject>?
         
