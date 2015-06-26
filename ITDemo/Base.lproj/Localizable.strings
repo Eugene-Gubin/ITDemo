@@ -5,8 +5,12 @@
   Created by Eugene Gubin on 6/26/15.
   Copyright (c) 2015 Evgeniy Gubin. All rights reserved.
 */
+"common.ok" = "OK";
+
 "userProfile.status.ok" = "OK";
 "userProfile.status.userNameIsTooShort" = "User name must contain 6 or more characters";
 "userProfile.status.passwordIsTooShort" = "Password must contain 6 or more characters";
-"userProfile.status.emailIsInvalid" = "Email is invalid";
+"userProfile.status.emailIsInvalid" = "Email is not valid";
 "userProfile.status.savingError" = "Cann't store user profile";
+"userProfile.status.loadingError" = "Cann't load user profile";
+"userProfile.status.phoneIsInvalid" = "Phone number is not valid";

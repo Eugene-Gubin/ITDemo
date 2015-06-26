@@ -17,6 +17,8 @@ extension KNUserProfileStatus {
         case .PasswordIsTooShort: return "userProfile.status.passwordIsTooShort".localized
         case .UserNameIsTooShort: return "userProfile.status.userNameIsTooShort".localized
         case .SavingError: return "userProfile.status.savingError".localized
+        case .LoadingError: return "userProfile.status.loadingError".localized
+        case .InvalidPhone: return "userProfile.status.phoneIsInvalid".localized
         }
     }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 enum KNUserProfileStatus {
-    case OK, UserNameIsTooShort, PasswordIsTooShort, InvalidEmail, SavingError
+    case OK, UserNameIsTooShort, PasswordIsTooShort, InvalidEmail, SavingError, LoadingError, InvalidPhone
 }

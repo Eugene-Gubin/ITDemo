@@ -44,6 +44,14 @@ class KNUserManager {
         return saveUserProfile(profile)
     }
     
+    func saveUserPhoneNumber(phone: String) -> KNUserProfileStatus {
+        if var up = loadUserProfile() {
+            up.phone = phone
+            return saveUserProfile(up)
+        }
+        return .LoadingError
+    }
+    
     func saveUserProfile(profile: KNUserProfile) -> KNUserProfileStatus {
        
         let status = validateUserProfile(profile)
@@ -77,6 +85,9 @@ class KNUserManager {
         }
         if (!KNEmailValidator.isValid(profile.email)) {
             return .InvalidEmail
+        }
+        if (!(profile.phone.isEmpty || KNPhoneUtils.sharedInstance.isValid(profile.phone))) {
+            return .InvalidPhone
         }
         
         return .OK

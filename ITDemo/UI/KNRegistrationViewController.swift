@@ -20,7 +20,7 @@ class KNRegistrationViewController: UIViewController {
         if (status == .OK) {
             performSegueWithIdentifier(KNDefinitions.kSeguePhoneScreen, sender: self)
         } else {
-            UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "OK").show()
+            UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "common.ok".localized).show()
         }
     }
 }

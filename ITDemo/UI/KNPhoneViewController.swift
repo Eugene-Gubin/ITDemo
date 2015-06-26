@@ -31,6 +31,12 @@ class KNPhoneViewController: UIViewController {
     }
     
     @IBAction func handleContinueTapped(sender: AnyObject) {
-        let isValid = KNPhoneUtils.sharedInstance.isValid(tfPhone.text)
+        let status = KNUserManager.sharedInstance.saveUserPhoneNumber(tfPhone.text)
+        
+        if status == .OK {
+            // todo segue
+        } else {
+            UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "common.ok".localized).show()
+        }
     }
 }
