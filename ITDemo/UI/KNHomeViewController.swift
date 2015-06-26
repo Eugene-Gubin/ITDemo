@@ -30,17 +30,15 @@ class KNHomeViewController: UIViewController {
     }
     
     @IBAction func handleRSSTapped(sender: AnyObject) {
+        toggleSideMenu()
         
+        let home = UIStoryboard(name: KNDefinitions.kStoryboardHome, bundle: nil)
+        let feedVC = home.instantiateViewControllerWithIdentifier(KNDefinitions.kKNNYTFeedViewController) as! UIViewController
+        setChildViewController(feedVC)
     }
     
     @IBAction func handleToggleMenu(sender: AnyObject) {
         toggleSideMenu()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     func toggleSideMenu() {
@@ -62,17 +60,19 @@ class KNHomeViewController: UIViewController {
     
     func setInitialChildViewController(vc: UIViewController) {
         addChildViewController(vc)
-        vc.view.frame = self.view.bounds
+        vc.view.frame = vwContainer.bounds
         vwContainer.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
     }
     
     func swapToChildViewController(vc: UIViewController) {
-        vc.view.frame = self.view.bounds
         let fromViewController = childViewControllers.first as! UIViewController
         fromViewController.willMoveToParentViewController(nil)
         
-        transitionFromViewController(fromViewController, toViewController: vc, duration: 1.0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: nil) { _ in
+        addChildViewController(vc)
+        vc.view.frame = vwContainer.bounds
+        
+        transitionFromViewController(fromViewController, toViewController: vc, duration: 0.3, options: .TransitionCrossDissolve, animations: nil) { _ in
             fromViewController.removeFromParentViewController()
             vc.didMoveToParentViewController(self)
         }

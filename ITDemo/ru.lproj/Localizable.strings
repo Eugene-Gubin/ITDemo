@@ -5,6 +5,8 @@
   Created by Eugene Gubin on 6/26/15.
   Copyright (c) 2015 Evgeniy Gubin. All rights reserved.
 */
+"common.ok" = "OK";
+
 "userProfile.status.ok" = "OK";
 "userProfile.status.userNameIsTooShort" = "Имя пользователя должно быть не короче 6 символов";
 "userProfile.status.passwordIsTooShort" = "Пароль должен быть не короче 6 символов";
@@ -12,3 +14,5 @@
 "userProfile.status.savingError" = "Ошибка при сохранении профиля пользователя";
 "userProfile.status.loadingError" = "Ошибка при загрузке профиля пользователя";
 "userProfile.status.phoneIsInvalid" = "Телефонный номер указан неправильно";
+
+"feed.error" = "Не удалось загрузить ленту новостей";

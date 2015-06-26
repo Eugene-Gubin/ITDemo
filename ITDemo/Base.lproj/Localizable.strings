@@ -14,3 +14,5 @@
 "userProfile.status.savingError" = "Cann't store user profile";
 "userProfile.status.loadingError" = "Cann't load user profile";
 "userProfile.status.phoneIsInvalid" = "Phone number is not valid";
+
+"feed.error" = "Couldn't load content";
