@@ -18,8 +18,7 @@ class KNRegistrationViewController: UIViewController {
         let um = KNUserManager.sharedInstance
         let status = um.saveUserProfile(name: lblUserName.text, email: lblEmail.text, password: lblPassword.text)
         if (status == .OK) {
-            // todo: trigger segue to next screen
-            UIAlertView(title: nil, message: "All is ok!", delegate: nil, cancelButtonTitle: "OK").show()
+            performSegueWithIdentifier(KNDefinitions.kSeguePhoneScreen, sender: self)
         } else {
             UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "OK").show()
         }

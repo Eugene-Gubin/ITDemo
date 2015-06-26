@@ -63,11 +63,56 @@
                         <outlet property="lblEmail" destination="JR3-sI-raC" id="uMe-9a-htL"/>
                         <outlet property="lblPassword" destination="zFZ-Lc-Lmy" id="IgZ-23-5KF"/>
                         <outlet property="lblUserName" destination="cVY-wd-7uZ" id="fc4-yj-1Mv"/>
+                        <segue destination="Wkj-jX-nKj" kind="show" identifier="sequePhoneScreen" id="Vhb-cR-ShB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1201" y="580"/>
+        </scene>
+        <!--Enter the phone number-->
+        <scene sceneID="dqT-fM-av2">
+            <objects>
+                <viewController title="Enter the phone number" id="Wkj-jX-nKj" customClass="KNPhoneViewController" customModule="ITDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oew-kR-Flh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jv8-kC-CAZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b01-gh-Pyz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-7f-bhM">
+                                <rect key="frame" x="16" y="96" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-3j-UVB">
+                                <rect key="frame" x="269" y="158" width="62" height="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleContinueTapped:" destination="Wkj-jX-nKj" eventType="touchUpInside" id="eCj-ui-iUL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zbs-7f-bhM" firstAttribute="top" secondItem="Oew-kR-Flh" secondAttribute="bottom" constant="32" id="9il-dg-fRs"/>
+                            <constraint firstItem="zbs-7f-bhM" firstAttribute="leading" secondItem="b01-gh-Pyz" secondAttribute="leadingMargin" id="Ghx-GG-ojm"/>
+                            <constraint firstItem="pA5-3j-UVB" firstAttribute="top" secondItem="zbs-7f-bhM" secondAttribute="bottom" constant="32" id="ZDc-SP-H7N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zbs-7f-bhM" secondAttribute="trailing" id="li8-Mz-nmq"/>
+                            <constraint firstAttribute="centerX" secondItem="pA5-3j-UVB" secondAttribute="centerX" id="okW-mO-AHR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfPhone" destination="zbs-7f-bhM" id="AP0-FB-35p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeQ-i3-9mJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="580"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LAg-cJ-7ri">

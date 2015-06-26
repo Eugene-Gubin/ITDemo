@@ -9,5 +9,5 @@
 import Foundation
 
 class KNDefinitions {
-    
+    static let kSeguePhoneScreen = "sequePhoneScreen"
 }
