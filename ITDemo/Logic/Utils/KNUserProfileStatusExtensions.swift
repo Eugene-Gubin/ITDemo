@@ -12,11 +12,11 @@ extension KNUserProfileStatus {
     // todo: localize
     var errorMessage: String {
         switch self {
-        case .OK: return "OK"
-        case .InvalidEmail: return "Email is invalid"
-        case .PasswordIsTooShort: return "Password must contain 6 or more characters"
-        case .UserNameIsTooShort: return "User name must contain 6 or more characters"
-        case .SavingError: return "Cann't store user profile"
+        case .OK: return "userProfile.status.ok".localized
+        case .InvalidEmail: return "userProfile.status.emailIsInvalid".localized
+        case .PasswordIsTooShort: return "userProfile.status.passwordIsTooShort".localized
+        case .UserNameIsTooShort: return "userProfile.status.userNameIsTooShort".localized
+        case .SavingError: return "userProfile.status.savingError".localized
         }
     }
 }

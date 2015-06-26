@@ -1,15 +1,15 @@
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "AcL-6W-VW2"; */
-"AcL-6W-VW2.normalTitle" = "Register";
+"AcL-6W-VW2.normalTitle" = "Регистрация";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "JR3-sI-raC"; */
-"JR3-sI-raC.placeholder" = "Email";
+"JR3-sI-raC.placeholder" = "Адрес почты";
 
 /* Class = "UITextField"; placeholder = "User Name"; ObjectID = "cVY-wd-7uZ"; */
-"cVY-wd-7uZ.placeholder" = "User Name";
+"cVY-wd-7uZ.placeholder" = "Имя пользователя";
 
 /* Class = "UINavigationItem"; title = "Registration"; ObjectID = "oOL-Sr-n98"; */
-"oOL-Sr-n98.title" = "Registration";
+"oOL-Sr-n98.title" = "Зарегистрироваться";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "zFZ-Lc-Lmy"; */
-"zFZ-Lc-Lmy.placeholder" = "Password";
+"zFZ-Lc-Lmy.placeholder" = "Пароль";

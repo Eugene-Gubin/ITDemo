@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ITDemo
+
+  Created by Eugene Gubin on 6/26/15.
+  Copyright (c) 2015 Evgeniy Gubin. All rights reserved.
+*/
+"userProfile.status.ok" = "OK";
+"userProfile.status.userNameIsTooShort" = "User name must contain 6 or more characters";
+"userProfile.status.passwordIsTooShort" = "Password must contain 6 or more characters";
+"userProfile.status.emailIsInvalid" = "Email is invalid";
+"userProfile.status.savingError" = "Cann't store user profile";
