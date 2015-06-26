@@ -13,6 +13,9 @@
 		B627B5251B3D4E6400BC0123 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627B5241B3D4E6400BC0123 /* CoreTelephony.framework */; };
 		B627B5271B3D614600BC0123 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B627B5261B3D614600BC0123 /* Home.storyboard */; };
 		B627B5291B3D67F500BC0123 /* KNHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B5281B3D67F500BC0123 /* KNHomeViewController.swift */; };
+		B627B52D1B3D762200BC0123 /* KNMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B52C1B3D762200BC0123 /* KNMapViewController.swift */; };
+		B627B52F1B3D767B00BC0123 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627B52E1B3D767B00BC0123 /* MapKit.framework */; };
+		B627B5311B3D7A6200BC0123 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627B5301B3D7A6200BC0123 /* CoreLocation.framework */; };
 		B64003C11B3D1E3400EC6E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003C01B3D1E3400EC6E7F /* AppDelegate.swift */; };
 		B64003C31B3D1E3400EC6E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64003C21B3D1E3400EC6E7F /* ViewController.swift */; };
 		B64003C61B3D1E3400EC6E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64003C41B3D1E3400EC6E7F /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		B627B5241B3D4E6400BC0123 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B627B5261B3D614600BC0123 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = UI/Home.storyboard; sourceTree = "<group>"; };
 		B627B5281B3D67F500BC0123 /* KNHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNHomeViewController.swift; path = UI/KNHomeViewController.swift; sourceTree = "<group>"; };
+		B627B52C1B3D762200BC0123 /* KNMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNMapViewController.swift; path = UI/KNMapViewController.swift; sourceTree = "<group>"; };
+		B627B52E1B3D767B00BC0123 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B627B5301B3D7A6200BC0123 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B64003BB1B3D1E3400EC6E7F /* ITDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64003BF1B3D1E3400EC6E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64003C01B3D1E3400EC6E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B627B5311B3D7A6200BC0123 /* CoreLocation.framework in Frameworks */,
+				B627B52F1B3D767B00BC0123 /* MapKit.framework in Frameworks */,
 				B627B5251B3D4E6400BC0123 /* CoreTelephony.framework in Frameworks */,
 				B64003E81B3D216E00EC6E7F /* Security.framework in Frameworks */,
 			);
@@ -95,6 +103,8 @@
 		B64003B21B3D1E3400EC6E7F = {
 			isa = PBXGroup;
 			children = (
+				B627B5301B3D7A6200BC0123 /* CoreLocation.framework */,
+				B627B52E1B3D767B00BC0123 /* MapKit.framework */,
 				B627B5241B3D4E6400BC0123 /* CoreTelephony.framework */,
 				B64003E71B3D216E00EC6E7F /* Security.framework */,
 				B64003BD1B3D1E3400EC6E7F /* ITDemo */,
@@ -162,6 +172,7 @@
 				B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */,
 				B627B5261B3D614600BC0123 /* Home.storyboard */,
 				B627B5281B3D67F500BC0123 /* KNHomeViewController.swift */,
+				B627B52C1B3D762200BC0123 /* KNMapViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -313,6 +324,7 @@
 				B64003E41B3D204100EC6E7F /* KNUserProfile.swift in Sources */,
 				B64003F11B3D2D5F00EC6E7F /* KNUserProfileValidationStatus.swift in Sources */,
 				B64003EB1B3D21C700EC6E7F /* Keychain.swift in Sources */,
+				B627B52D1B3D762200BC0123 /* KNMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,4 +11,5 @@ import Foundation
 class KNDefinitions {
     static let kSeguePhoneScreen = "sequePhoneScreen"
     static let kStoryboardHome = "Home"
+    static let kKNMapViewController = "KNMapViewController"
 }

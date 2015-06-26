@@ -21,6 +21,41 @@
             </objects>
             <point key="canvasLocation" x="28" y="449"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="dxJ-xH-rPI">
+            <objects>
+                <viewController storyboardIdentifier="KNMapViewController" id="P6a-rk-xqN" customClass="KNMapViewController" customModule="ITDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q92-Zj-IP2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ynL-2d-gby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kBJ-in-4O4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qr-eN-EoU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="P6a-rk-xqN" id="Hci-ne-2OX"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1qr-eN-EoU" firstAttribute="top" secondItem="kBJ-in-4O4" secondAttribute="top" id="EJX-m0-25d"/>
+                            <constraint firstItem="1qr-eN-EoU" firstAttribute="bottom" secondItem="ynL-2d-gby" secondAttribute="top" id="m1C-aA-5vb"/>
+                            <constraint firstItem="1qr-eN-EoU" firstAttribute="leading" secondItem="kBJ-in-4O4" secondAttribute="leading" id="qh0-Ee-tyK"/>
+                            <constraint firstAttribute="trailing" secondItem="1qr-eN-EoU" secondAttribute="trailing" id="xak-1J-NwW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vwMap" destination="1qr-eN-EoU" id="KOm-8r-Ofk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3n-kS-2QY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="1108"/>
+        </scene>
         <!--Home-->
         <scene sceneID="tdU-sc-mGb">
             <objects>
