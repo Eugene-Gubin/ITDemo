@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -92,6 +93,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82U-kK-zsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28" y="1773"/>
+        </scene>
+        <!--Photo Editor View Conroller-->
+        <scene sceneID="tzq-Nh-KcQ">
+            <objects>
+                <viewController storyboardIdentifier="KNPhotoEditorViewController" id="MVq-Ww-s6S" customClass="KNPhotoEditorViewConroller" customModule="ITDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9M3-hF-B6X"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gfn-rz-03N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="14J-gx-Syz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-we-atf">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Original" id="6nl-Lk-g0G">
+                                        <connections>
+                                            <action selector="handleOriginTapped:" destination="MVq-Ww-s6S" id="Oqy-Yx-xeR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="B&amp;W" id="7kb-05-4yZ">
+                                        <connections>
+                                            <action selector="handleBnWTapped:" destination="MVq-Ww-s6S" id="uwW-a8-iot"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Sephia" id="mTq-aQ-E8y">
+                                        <connections>
+                                            <action selector="handleSephiaTapped:" destination="MVq-Ww-s6S" id="FPC-oA-khh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Crop" id="Yss-cB-PXr">
+                                        <connections>
+                                            <action selector="handleCropTapped:" destination="MVq-Ww-s6S" id="VbD-xZ-oDg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PoA-b1-Uwd"/>
+                                    <barButtonItem systemItem="save" id="rxR-td-Cij">
+                                        <connections>
+                                            <action selector="handleSaveTapped:" destination="MVq-Ww-s6S" id="wXc-yy-Pba"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-kL-PMp">
+                                <rect key="frame" x="16" y="36" width="568" height="504"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eZh-NO-wCw" appends="YES" id="Ukm-Bw-qmW"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXY-tq-2kt">
+                                <rect key="frame" x="195" y="284" width="210" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Press here to take a photo...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleTakeAPhoto:" destination="MVq-Ww-s6S" eventType="touchUpInside" id="jNV-r2-98M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PXY-tq-2kt" secondAttribute="centerX" id="1se-7X-fth"/>
+                            <constraint firstAttribute="trailing" secondItem="1AX-we-atf" secondAttribute="trailing" id="5ve-3U-Za3"/>
+                            <constraint firstItem="fXD-kL-PMp" firstAttribute="leading" secondItem="14J-gx-Syz" secondAttribute="leadingMargin" id="8Ej-4n-fJq"/>
+                            <constraint firstItem="1AX-we-atf" firstAttribute="leading" secondItem="14J-gx-Syz" secondAttribute="leading" id="KLY-yK-zSQ"/>
+                            <constraint firstItem="1AX-we-atf" firstAttribute="top" secondItem="fXD-kL-PMp" secondAttribute="bottom" constant="16" id="RBC-Vr-3Qi"/>
+                            <constraint firstItem="1AX-we-atf" firstAttribute="bottom" secondItem="Gfn-rz-03N" secondAttribute="top" id="SJ7-rr-O1T"/>
+                            <constraint firstAttribute="centerY" secondItem="PXY-tq-2kt" secondAttribute="centerY" id="fVC-CG-zvk"/>
+                            <constraint firstItem="fXD-kL-PMp" firstAttribute="top" secondItem="9M3-hF-B6X" secondAttribute="bottom" constant="16" id="hjZ-Lu-MEu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fXD-kL-PMp" secondAttribute="trailing" id="lXT-BY-nYI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnTakeAPhoo" destination="PXY-tq-2kt" id="8NB-Fe-zZl"/>
+                        <outlet property="imgPicture" destination="fXD-kL-PMp" id="Ueh-es-r0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIy-c8-b7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eZh-NO-wCw">
+                    <connections>
+                        <action selector="handleImageTap:" destination="MVq-Ww-s6S" id="Vty-1N-v97"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="28" y="2431"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="udA-wr-ExE">

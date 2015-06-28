@@ -18,7 +18,11 @@ class KNHomeViewController: UIViewController {
     private var sideMenuIsPresented = false
     
     @IBAction func handlePhotoEditorTapped(sender: AnyObject) {
+        toggleSideMenu()
         
+        let home = UIStoryboard(name: KNDefinitions.kStoryboardHome, bundle: nil)
+        let photoVC = home.instantiateViewControllerWithIdentifier(KNDefinitions.kKNPhotoEditorViewController) as! UIViewController
+        setChildViewController(photoVC)
     }
     
     @IBAction func handleMapTapped(sender: AnyObject) {

@@ -16,6 +16,7 @@ class KNDefinitions {
     
     static let kKNMapViewController = "KNMapViewController"
     static let kKNNYTFeedViewController = "KNNYTFeedViewController"
+    static let kKNPhotoEditorViewController = "KNPhotoEditorViewController"
     
     static let kNYTFeedCell = "NYTFeedCell"
     
