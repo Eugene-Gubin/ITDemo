@@ -23,4 +23,13 @@ class KNRegistrationViewController: UIViewController {
             UIAlertView(title: nil, message: status.errorMessage, delegate: nil, cancelButtonTitle: "common.ok".localized).show()
         }
     }
+    
+    @IBAction func handleTextFieldIsFilled(sender: AnyObject) {
+        if (sender === lblUserName) {
+            lblEmail.becomeFirstResponder()
+        }
+        if (sender === lblEmail) {
+            lblPassword.becomeFirstResponder()
+        }
+    }
 }
