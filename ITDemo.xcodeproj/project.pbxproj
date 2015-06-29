@@ -12,6 +12,7 @@
 		843C58DD1B4031CD0082BB5D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C58DC1B4031CD0082BB5D /* CoreImage.framework */; };
 		843C58DF1B40402C0082BB5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C58DE1B40402C0082BB5D /* AVFoundation.framework */; };
 		843C58E11B404F160082BB5D /* KNImageProcessingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C58E01B404F160082BB5D /* KNImageProcessingUtils.swift */; };
+		B61D9C2D1B41125A003AB2D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D9C2C1B41125A003AB2D6 /* SystemConfiguration.framework */; };
 		B627B51C1B3D464700BC0123 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B627B51E1B3D464700BC0123 /* Localizable.strings */; };
 		B627B5211B3D4A9600BC0123 /* KNPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */; };
 		B627B5231B3D4CA700BC0123 /* KNPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627B5221B3D4CA700BC0123 /* KNPhoneUtils.swift */; };
@@ -59,6 +60,7 @@
 		843C58DC1B4031CD0082BB5D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		843C58DE1B40402C0082BB5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		843C58E01B404F160082BB5D /* KNImageProcessingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNImageProcessingUtils.swift; sourceTree = "<group>"; };
+		B61D9C2C1B41125A003AB2D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B627B51D1B3D464700BC0123 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B627B51F1B3D464D00BC0123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B627B5201B3D4A9600BC0123 /* KNPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KNPhoneViewController.swift; path = UI/KNPhoneViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61D9C2D1B41125A003AB2D6 /* SystemConfiguration.framework in Frameworks */,
 				843C58DF1B40402C0082BB5D /* AVFoundation.framework in Frameworks */,
 				843C58DD1B4031CD0082BB5D /* CoreImage.framework in Frameworks */,
 				B627B5311B3D7A6200BC0123 /* CoreLocation.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		B64003B21B3D1E3400EC6E7F = {
 			isa = PBXGroup;
 			children = (
+				B61D9C2C1B41125A003AB2D6 /* SystemConfiguration.framework */,
 				843C58DE1B40402C0082BB5D /* AVFoundation.framework */,
 				843C58DC1B4031CD0082BB5D /* CoreImage.framework */,
 				B627B5301B3D7A6200BC0123 /* CoreLocation.framework */,
