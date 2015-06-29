@@ -31,21 +31,29 @@ class KNPhotoEditorViewConroller: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func handleOriginTapped(sender: AnyObject) {
-        imgPicture.image = originalImage
+        if let originalImagel = self.originalImage {
+            imgPicture.image = originalImage
+        }
     }
     
     @IBAction func handleBnWTapped(sender: AnyObject) {
-        imgPicture.image = ipu.applyGrayscaleFilter(originalImage!)
+        if let originalImagel = self.originalImage {
+            imgPicture.image = ipu.applyGrayscaleFilter(originalImage!)
+        }
     }
     
     @IBAction func handleSephiaTapped(sender: AnyObject) {
-        imgPicture.image = ipu.applySephiaFilter(originalImage!)
+        if let originalImagel = self.originalImage {
+            imgPicture.image = ipu.applySephiaFilter(originalImage!)
+        }
     }
     
     @IBAction func handleCropTapped(sender: AnyObject) {
         if (cropPoints.count == 2) {
             removeCropLines()
             imgPicture.image = ipu.applyCropping(originalImage!, rect: ipu.createRectFromPoints(cropPoints))
+        } else {
+            UIAlertView(title: nil, message: "Tap twice on picture to form crop rectangle", delegate: nil, cancelButtonTitle: "common.ok".localized).show()
         }
     }
     
@@ -57,7 +65,9 @@ class KNPhotoEditorViewConroller: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func handleSaveTapped(sender: AnyObject) {
-        UIImageWriteToSavedPhotosAlbum(imgPicture.image, self, Selector("showSavingCompleteAlert:error:contextInfo:"), nil)
+        if let image = imgPicture.image {
+            UIImageWriteToSavedPhotosAlbum(imgPicture.image, self, Selector("showSavingCompleteAlert:error:contextInfo:"), nil)
+        }
     }
     
     @IBAction func handleImageTap(sender: AnyObject) {
@@ -107,6 +117,10 @@ class KNPhotoEditorViewConroller: UIViewController, UIImagePickerControllerDeleg
     }
     
     func addCropPoint(point: CGPoint) {
+        if originalImage == nil {
+            return
+        }
+        
         let cp = ipu.convertUIImageViewPointToUIImagePoint(point, imgViewBounds: imgPicture.bounds, imgSize: originalImage!.size)
         
         if cropPoints.count >= 2 || cp == nil {
