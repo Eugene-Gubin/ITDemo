@@ -9,7 +9,7 @@
 import Foundation
 import Security
 
-class Keychain {
+class KNKeychain {
     
     private let kSecurityClass = kSecClass as String
     private let kAccount = kSecAttrAccount as String

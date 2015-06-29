@@ -20,7 +20,7 @@ class KNUserManager {
     
     func loadUserProfile() -> KNUserProfile? {
         
-        let keychain = Keychain()
+        let keychain = KNKeychain()
         
         if  let name = keychain.query(kName),
             let email = keychain.query(kEmail),
@@ -64,7 +64,7 @@ class KNUserManager {
             let password = profile.email.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false),
             let phone = profile.email.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
                 
-                let keychain = Keychain()
+                let keychain = KNKeychain()
                 keychain.update(kName, data: name)
                 keychain.update(kPwd, data: password)
                 keychain.update(kEmail, data: email)
