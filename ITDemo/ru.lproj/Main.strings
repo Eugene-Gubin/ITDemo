@@ -1,15 +1,24 @@
 
-/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "AcL-6W-VW2"; */
+/* Class = "UIButton"; normalTitle = "Регистрация"; ObjectID = "AcL-6W-VW2"; */
 "AcL-6W-VW2.normalTitle" = "Регистрация";
 
-/* Class = "UITextField"; placeholder = "Email"; ObjectID = "JR3-sI-raC"; */
+/* Class = "UITextField"; placeholder = "Адрес почты"; ObjectID = "JR3-sI-raC"; */
 "JR3-sI-raC.placeholder" = "Адрес почты";
 
-/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "cVY-wd-7uZ"; */
+/* Class = "UIViewController"; title = "Enter the phone number"; ObjectID = "Wkj-jX-nKj"; */
+"Wkj-jX-nKj.title" = "Введите номер телефона";
+
+/* Class = "UITextField"; placeholder = "Имя пользователя"; ObjectID = "cVY-wd-7uZ"; */
 "cVY-wd-7uZ.placeholder" = "Имя пользователя";
 
-/* Class = "UINavigationItem"; title = "Registration"; ObjectID = "oOL-Sr-n98"; */
+/* Class = "UINavigationItem"; title = "Зарегистрироваться"; ObjectID = "oOL-Sr-n98"; */
 "oOL-Sr-n98.title" = "Зарегистрироваться";
 
-/* Class = "UITextField"; placeholder = "Password"; ObjectID = "zFZ-Lc-Lmy"; */
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "pA5-3j-UVB"; */
+"pA5-3j-UVB.normalTitle" = "Продолжить";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "zFZ-Lc-Lmy"; */
 "zFZ-Lc-Lmy.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "zbs-7f-bhM"; */
+"zbs-7f-bhM.placeholder" = "Номер телефона";
